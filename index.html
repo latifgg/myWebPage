@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>MyWebPage</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Skills</a></li>
+            <li><a href="#services">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <br /><br /><br />
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-container row">
+          <div class="header-text col-12">
+            <p>Welcome to my Webpage</p>
+            <h1>Hi, I`m <span class="animated-word">Latif Güngör</span></h1>
+            <div>
+              <a href="images/cv-latif-eng.pdf" class="btn btn1" download
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------------- About  ---------------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/20200619_115932.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p>
+              I am a person who is very open to change and development. I have a
+              determined and ambitious character who does not give up easily. No
+              matter what I do, I try to do my best. There is movement and
+              excitement in my team, stagnation is not for me at all.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('experience')">
+                <b>Experience</b>
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                <b>Education</b>
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="experience">
+              <ul>
+                <li>
+                  <span>2021 – 2022</span><br />Worker(intern) in logistics, A&J
+                  Stöckli Netstal
+                </li>
+                <li>
+                  <span>2006 – 2016</span><br />Own company (design and
+                  construction)
+                </li>
+                <li><span>2004 – 2013</span><br />Education Consulting Firm</li>
+                <li><span>2003 – 2004</span><br />Textile engineer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>06/2022 – Current</span><br />Fullstack Web Programming
+                  Course, HiCoders
+                </li>
+                <li>
+                  <span>2021 – 2022</span><br />INVOL program Glarus at the
+                  GIBGL in Ziegelbrücke
+                </li>
+                <li>
+                  <span>2010 – 2012</span><br />Master's degree completed,
+                  Business Administration
+                </li>
+                <li>
+                  <span>1999 – 2003</span><br />Textile Engineering, Istanbul
+                  Technical University
+                </li>
+                <li>
+                  <span>1998 – 1999</span><br />English language at Technical
+                  University
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio & Skills--------------------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">Skills</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/html51.png" alt="" />
+            <div class="layer">
+              <h3>HTML</h3>
+              <div class="portfolio-skills">
+                <div class="outer">
+                  <div class="inner">
+                    <div id="number">95%</div>
+                  </div>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="160px"
+                  height="160px"
+                >
+                  <defs>
+                    <linearGradient id="GC">
+                      <stop offset="0%" stop- color="#DA22FF" />
+
+                      <stop offset="100%" stop- color="#9733EE" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    class="circle circle1"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/css1.png" alt="" />
+            <div class="layer">
+              <h3>CSS</h3>
+              <div class="portfolio-skills">
+                <div class="outer">
+                  <div class="inner">
+                    <div id="number">85%</div>
+                  </div>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="160px"
+                  height="160px"
+                >
+                  <defs>
+                    <linearGradient id="GC">
+                      <stop offset="0%" stop- color="#DA22FF" />
+
+                      <stop offset="100%" stop- color="#9733EE" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    class="circle circle2"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/js1.png" alt="" />
+            <div class="layer">
+              <h3>JavaScript</h3>
+              <div class="portfolio-skills">
+                <div class="outer">
+                  <div class="inner">
+                    <div id="number">80%</div>
+                  </div>
+                </div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  version="1.1"
+                  width="160px"
+                  height="160px"
+                >
+                  <defs>
+                    <linearGradient id="GC">
+                      <stop offset="0%" stop- color="#DA22FF" />
+
+                      <stop offset="100%" stop- color="#9733EE" />
+                    </linearGradient>
+                  </defs>
+                  <circle
+                    class="circle circle3"
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- services--------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Certificates</h1>
+        <div class="services-list">
+          <div class="certificates">
+            <h2>HTML5</h2>
+            <a href="images/Coursera HTML5.pdf" class="btn btn1 btn2" download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>CSS3</h2>
+            <a href="images/Coursera CSS3.pdf" class="btn btn1 btn2" download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>GIT & GITHUB</h2>
+            <a
+              href="images/Coursera IBM GIT & GITHUB.pdf"
+              class="btn btn1 btn2"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>Conversational English</h2>
+            <a
+              href="images/Coursera CONVERSATIONAL ENGLISH.pdf"
+              class="btn btn1 btn2"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>HiCoders CSS-1</h2>
+            <a
+              href="images/HICODERS - CSS1- Report 2022_2023 - Latif Güngör.pdf"
+              class="btn btn1 btn2"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>HiCoders CSS-1 Report</h2>
+            <a
+              href="images/HICODERS - CSS1- Report 2022_2023 - Latif Güngör.pdf"
+              class="btn btn1 btn2"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>HiCoders CSS-2</h2>
+            <a
+              href="images/HICODERS - CSS2- Report 2022_2023 - Latif Gungor.pdf"
+              class="btn btn1 btn2"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>HiCoders CSS-1</h2>
+            <a href="images/HICODERS CSS-1.pdf" class="btn btn1 btn2" download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>HiCoders CSS-Advanced</h2>
+            <a href="images/HICODERS CSS-ADVANCED.pdf" class="btn btn1 btn2" download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>HiCoders JavaScript Module-1</h2>
+            <a
+              href="images/HICODERS JAVASCRIPT MODULE-1.pdf"
+              class="btn btn1 btn2"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>HiCoders JavaScript Module-2</h2>
+            <a
+              href="images/HICODERS JAVASCRIPT MODULE-2.pdf"
+              class="btn btn1 btn2"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>HiCoders JavaScript - 1 Report</h2>
+            <a
+              href="images/HICODERS - JS-I Report 2022_2023 - Latif GÜNGÖR.pdf"
+              class="btn btn1 btn2"
+              download
+              >Download CV</a
+            >
+          </div>
+          <div class="certificates">
+            <h2>HiCoders JavaScript - 2 Report</h2>
+            <a
+              href="images/HICODERS - JS-2 Report 2022_2023 - Latif GÜNGÖR.pdf"
+              class="btn btn1 btn2"
+              download
+              >Download CV</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------Contact------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row contact-row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> latifgungor51@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 078 801 46 41</p>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+              <a href="https://instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://linkedin.com"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright 2022</p>
+      </div>
+    </div>
+    <script defer src="./app.js"></script>
+  </body>
+</html>
